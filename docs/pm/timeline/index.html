@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .node {
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            max-width: 200px;
+            text-align: center;
+        }
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #333;
+            margin: 5px;
+        }
+        .split {
+            display: flex;
+            justify-content: center;
+        }
+        .path {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Timeline</h1>
+    <div class="flowchart">
+        <div class="node">aelang.org website and peripheral development</div>
+        <div class="arrow"></div>
+        <div class="node">aelang development splits off into two</div>
+        <div class="arrow"></div>
+        <div class="split">
+            <div class="path">
+                <div class="node">PATH 1: release announcement, call for contributors, socials, etc.</div>
+                <div class="arrow"></div>
+                <div class="node">community development and outreach</div>
+            </div>
+            <div class="path">
+                <div class="node">PATH 2: hire first software developer</div>
+                <div class="arrow"></div>
+                <div class="node">AETHER development</div>
+                <div class="arrow"></div>
+                <div class="node">release, marketing, development</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
